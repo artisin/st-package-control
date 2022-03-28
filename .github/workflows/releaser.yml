@@ -1,0 +1,29 @@
+name: releaser
+
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Archive Release - foldcomments
+        uses: thedoctor0/zip-release@master
+        with:
+          type: 'zip'
+          filename: 'foldcomments.zip'
+          directory: 'foldcomments'
+          exclusions: '*.git* /*node_modules/* .editorconfig'
+      - name: Upload Release - foldcomments
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "foldcomments.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
