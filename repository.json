@@ -1,0 +1,20 @@
+{
+  "schema_version": "3.0.0",
+  "dependencies": [],
+  "packages": [
+    {
+      "name": "foldcomments",
+      "description": "@me - comment fold",
+      "homepage": "https://github.com/artisin/st-package-control/foldcomments/README.md",
+      "releases": [
+        {
+          "platforms": ["*"],
+          "sublime_text": ">=3143",
+          "version": "1.0.0",
+          "url": "https://github.com/artisin/st-package-control/archive/1.0.0.zip",
+          "date": "2020-01-01 20:00:00"
+        }
+      ]
+    }
+  ]
+}
