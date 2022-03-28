@@ -4,14 +4,15 @@
   "packages": [
     {
       "name": "foldcomments",
-      "description": "@me - comment fold",
-      "homepage": "https://github.com/artisin/st-package-control/foldcomments/README.md",
+      "description": "@me - comment hide/fold",
+      "homepage": "https://github.com/artisin/st-package-control/tree/develop/foldcomments",
+      "author": "custom",
       "releases": [
         {
           "platforms": ["*"],
           "sublime_text": ">=3143",
-          "version": "1.0.0",
-          "url": "https://github.com/artisin/st-package-control/archive/1.0.0.zip",
+          "version": "0.0.3",
+          "url": "https://github.com/artisin/st-package-control/releases/download/0.0.3/foldcomments.zip",
           "date": "2020-01-01 20:00:00"
         }
       ]
