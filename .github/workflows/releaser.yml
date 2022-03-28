@@ -18,10 +18,11 @@ jobs:
         with:
           type: 'zip'
           filename: 'foldcomments.zip'
-          directory: 'foldcomments'
+          path: 'foldcomments'
           exclusions: '*.git* /*node_modules/* .editorconfig'
       - name: Upload Release - foldcomments
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "foldcomments.zip"
+          artifacts: "release.tar.gz,foo/*.txt"
+          bodyFile: "body.md"
           token: ${{ secrets.GITHUB_TOKEN }}
